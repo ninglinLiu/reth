@@ -1,0 +1,16 @@
+[package]
+name = "example-custom-inspector"
+version = "0.0.0"
+publish = false
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+reth-ethereum = { workspace = true, features = ["node", "evm", "pool", "cli"] }
+clap = { workspace = true, features = ["derive"] }
+evm2.workspace = true
+futures-util.workspace = true
+alloy-primitives.workspace = true
+
+[lints]
+workspace = true
